@@ -1,0 +1,49 @@
+# Remember My Sort
+
+Fixes the persistent sort reset issue in Android 11+ system file picker via LSPosed.
+
+![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-blue)
+![Android API](https://img.shields.io/badge/API-30%2B-brightgreen)
+
+## Overview
+
+Starting with Android 11's [scoped storage](https://developer.android.com/about/versions/11/privacy/storage#scoped-storage), all apps that need file access must use the system file picker. This picker fails to persist sort preferences across directories. Sort order is kept in the root view, but navigating into any subdirectory resets it to filename A-Z. Users must manually change the sort every time they browse into a folder, regardless of how many times they've set it before.
+
+Users have [reported the issue since 2021](https://xdaforums.com/t/google-files-default-sort.4309799/) with no fix from Google.
+
+## How it Works
+
+Hooks into DocumentsUI sort logic. Manual sort changes are persisted to storage and restored on subsequent picker launches. Defaults to date descending on first run.
+
+## Requirements
+
+- LSPosed framework (API 100)
+- Android 11+ (API 30+)
+
+## Compatibility
+
+Works on AOSP-based ROMs and Pixel devices. OEM-modified ROMs are untested.
+
+## Installation
+
+1. Install [LSPosed](https://github.com/JingMatrix/LSPosed) (JingMatrix fork recommended)
+2. Download latest APK from [releases](https://github.com/hxreborn/remember-my-sort/releases)
+3. Install APK and enable module in LSPosed Manager
+4. Add `com.google.android.documentsui` to module scope
+5. Force stop DocumentsUI
+6. Open any file picker to trigger DocumentsUI
+
+## Build
+
+```bash
+./gradlew assembleDebug
+```
+
+Requires JDK 21 and Gradle 8.13.
+
+## License
+
+![GNU badge](https://img.shields.io/badge/-GNU-555?style=flat&logo=gnu&logoColor=white)
+![GPLv3 badge](https://img.shields.io/badge/-GPLv3-c62828?style=flat)
+
+This project is licensed under the GNU General Public License v3.0 – see the [LICENSE](https://github.com/hxreborn/remember-my-sort/blob/main/LICENSE) file for details.
