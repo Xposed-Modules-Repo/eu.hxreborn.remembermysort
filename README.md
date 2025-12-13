@@ -1,6 +1,6 @@
 # Remember My Sort
 
-Fixes the persistent sort reset issue in Android 11+ system file picker via LSPosed.
+An LSPosed module that forces the Android file picker to remember your sorting preferences.
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-blue)
 ![Android API](https://img.shields.io/badge/API-30%2B-brightgreen)
