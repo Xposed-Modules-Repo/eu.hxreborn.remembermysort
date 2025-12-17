@@ -2,8 +2,11 @@
 
 An LSPosed module that forces the Android file picker to remember your sorting preferences.
 
+![Android CI](https://github.com/hxreborn/remember-my-sort/actions/workflows/ci.yml/badge.svg)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-blue)
 ![Android API](https://img.shields.io/badge/API-30%2B-brightgreen)
+
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid2.png" height="80" alt="Get it on IzzyOnDroid">](https://apt.izzysoft.de/packages/eu.hxreborn.remembermysort)
 
 ## Overview
 
@@ -27,7 +30,7 @@ Works on AOSP-based ROMs and Pixel devices. OEM-modified ROMs are untested.
 ## Installation
 
 1. Install [LSPosed](https://github.com/JingMatrix/LSPosed) (JingMatrix fork recommended)
-2. Download latest APK from [releases](https://github.com/hxreborn/remember-my-sort/releases)
+2. Download latest APK from [releases](https://github.com/hxreborn/remember-my-sort/releases) or [IzzyOnDroid](https://apt.izzysoft.de/packages/eu.hxreborn.remembermysort)
 3. Install APK and enable module in LSPosed Manager
 4. Add your DocumentsUI package to module scope:
    - Google/Pixel: `com.google.android.documentsui`
