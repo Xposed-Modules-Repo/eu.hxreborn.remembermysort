@@ -3,10 +3,11 @@
 An LSPosed module that forces the Android file picker to remember your sorting preferences.
 
 ![Android CI](https://github.com/hxreborn/remember-my-sort/actions/workflows/android.yml/badge.svg)
-![Kotlin](https://img.shields.io/badge/Kotlin-2.1.21-blue)
-![Android API](https://img.shields.io/badge/API-30%2B-brightgreen)
+![Kotlin](https://img.shields.io/badge/Kotlin-2.1.21-7F52FF?style=flat&logo=kotlin&logoColor=white)
+![Android](https://img.shields.io/badge/API-30%2B-3DDC84?logo=android&logoColor=white)
 
 <p>
+  <a href="https://f-droid.org/en/packages/eu.hxreborn.remembermysort/"><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="80" alt="Get it on F-Droid" /></a>
   <a href="https://apt.izzysoft.de/packages/eu.hxreborn.remembermysort"><img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" height="80" alt="Get it on IzzyOnDroid" /></a>
   <a href="https://github.com/hxreborn/remember-my-sort/releases"><img src="https://raw.githubusercontent.com/hxreborn/remember-my-sort/main/.github/assets/badge_github.png" height="82" alt="Get it on GitHub" /></a>
 </p>
@@ -19,7 +20,7 @@ Users have [reported the issue since 2021](https://xdaforums.com/t/google-files-
 
 ## How it Works
 
-Hooks into DocumentsUI sort logic. Manual sort changes are persisted to storage and restored on subsequent picker launches. Defaults to date descending on first run.
+Hooks into DocumentsUI sort logic. Manual sort changes are persisted to storage and restored on subsequent picker launches.
 
 ## Requirements
 
@@ -51,7 +52,6 @@ Requires JDK 21 and Gradle 8.13.
 
 ## License
 
-![GNU badge](https://img.shields.io/badge/-GNU-555?style=flat&logo=gnu&logoColor=white)
-![GPLv3 badge](https://img.shields.io/badge/-GPLv3-c62828?style=flat)
+<a href="https://github.com/hxreborn/remember-my-sort/blob/main/LICENSE"><img src="https://raw.githubusercontent.com/hxreborn/remember-my-sort/main/.github/assets/gplv3.svg" height="90" alt="GPLv3"></a>
 
 This project is licensed under the GNU General Public License v3.0 – see the [LICENSE](https://github.com/hxreborn/remember-my-sort/blob/main/LICENSE) file for details.
