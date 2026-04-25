@@ -63,4 +63,4 @@ Requires [LSPosed](https://github.com/JingMatrix/LSPosed) and Android 11+. Works
 
 <a href="https://github.com/hxreborn/remember-my-sort/blob/main/LICENSE"><img src="https://raw.githubusercontent.com/hxreborn/remember-my-sort/main/.github/assets/gplv3.svg" height="90" alt="GPLv3"></a>
 
-This project is licensed under the GNU General Public License v3.0 – see the [LICENSE](https://github.com/hxreborn/remember-my-sort/blob/main/LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](https://github.com/hxreborn/remember-my-sort/blob/main/LICENSE) for details.
